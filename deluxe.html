@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Deluxe Package | In a Box</title>
+  <meta charset="utf-8">
+  <meta name="description" content="In a Box delivers food boxes and makes cooking fun and easy by providing a lot of products and services.">
+  <meta name="keywords" content="food, meal, recipe, delivery, cooking, deluxe, package">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="packages.css" /> 
+  <link rel="stylesheet" href="login.css" /> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <script src="login.js"></script>
+    
+</head>
+  
+</head>
+<body>
+  
+  <!--header-->
+  <div class="header">
+    <h2>In a Box</h2>
+  </div>
+
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-xl navbar-light mynav" style="background:#FBF1FB;">
+      <!-- Brand, logo -->
+      <a class="navbar-brand" href="index.html" style="font-family: cursive; color: #5C2F7A;">In a Box</a>
+     
+           
+      <!-- collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto mt-2 mt-sm-0">
+                
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" ><span class="mylink" >Home</span></a>
+          </li>
+         
+    
+         <!-- Dropdown -->
+
+         
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarServicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="mylink">Services & products offered</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarServicesDropdown">
+            <a class="dropdown-item" href="recipeGuide.html">Recipe guides</a>
+            <a class="dropdown-item" href="bakeAtHomeSet.html"> Bake at home set</a>
+            <a class="dropdown-item" href="ingredients.html">Ingredients</a>
+            <div class="dropdown-divider"></div>
+            <h5 class="dropdown-header">Other items</h5>
+            <a class="dropdown-item" href="OtherItems.html#mealPlanners">Meal planners</a>
+            <a class="dropdown-item" href="OtherItems.html#nutritionalIA">Nutritional information app</a>
+            <a class="dropdown-item" href="OtherItems.html#selection">Selection of weekly recipe choices</a>
+            <a class="dropdown-item" href="OtherItems.html#giftBox">Gift boxes for special occasions</a>
+          </div>
+        </li>
+        
+        
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              <span class="mylink active">Packages</span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="beginner.html">Beginners</a>
+              <a class="dropdown-item" href="everyday.html">Everyday</a>
+              <a class="dropdown-item active" href="deluxe.html">Deluxe</a>
+              <a class="dropdown-item" href="custom.html">Custom</a>
+            </div>
+          </li>       
+
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html" ><span class="mylink">About us</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.html" ><span class="mylink">Contact us</span></a>
+          </li>
+        </ul>
+
+        <div><a href="signUp.html" class="btn btn-outline-dark btn-sm" role="button" style="background-color: #F5E4FB;">Sign up</a></div>
+
+        <!--login-->
+        <div class="navbar myLogin" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa fa-fw fa-user"></i> Login</div>
+        <div id="id01" class="modal myModal1" style="z-index: 20;">
+  
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+        
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="email"><b>E-mail</b></label>
+              <input type="email" placeholder="Enter email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit" class="modalBtn">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        <!--login-->
+
+        <!--search box-->      
+        <form class="form-inline" action="/action_page.php">
+          <input type="search" class="form-control mr-sm-2" placeholder="Search">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        
+               
+      </div>
+    </nav> <br>
+
+      <div class="container" >
+
+      <!-- second navigation -->
+      <nav class="navbar1 navbar-expand-xl navbar-light sticky-top" style="background-color:silver; z-index: 10;" >
+          
+      <!-- collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+
+     <!-- Links -->
+     <div class="collapse navbar-collapse" id="collapsibleNav">
+       <ul class="navbar-nav mr-auto mt-2 mt-sm-0">
+              
+         <li class="nav-item">
+           <a class="nav-link" href="#standardWeeklyRecipes" style="color: #5C2F7A;">Weekly Recipes</a>
+         </li>          
+
+          <li class="nav-item">
+            <a class="nav-link" href="#bakeAtHomeSet" >Bake At Home Set</a>
+          </li>
+
+          <li class="nav-item">
+           <a class="nav-link" href="#nutritionalIA" >Nutritional Information App</a>
+          </li>
+
+         <li class="nav-item">
+           <a class="nav-link" href="#giftBox" >Special Occasion Gift Box</a>
+         </li>
+       </ul>            
+     </div>
+  </nav> <br>
+      
+  <h1 style="text-align: center;">Deluxe Package</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <div style="font-size:x-large;"><b>$100</b> per week</div>
+        <a href="signUp.html" class="btn btn-outline-dark" role="button" style="background-color: #A64D79;">
+          Purchase</a>
+      </div>
+    </div>
+  </div>
+
+        
+        <a name="standardWeeklyRecipes"></a>
+        <div class="packageInfo">
+          <div class="head">
+            <h2 class="standardWeeklyRecipes">Weekly Recipes</h2>
+        </div> <br>
+
+        <div class="myText">
+          <p>You can have <b>50 weekly recipes</b> in deluxe package. Every Monday you will receive an email with <b>50 meals options to choose from</b> for your week.
+            You can skip a weekly delivery by Friday at noon CST the week before your scheduled delivery. And if you need to cancel your In a Box deliveries for any reason, you can do so by contacting us.
+            Here are three sample meal for this week.  
+          </p>
+        </div>
+
+        <div class="row">
+     
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-image-right" src="image/ukrainian dill potatoes.jpg" alt="Ukrainian Dill Potatoes">
+          <div class="card-body">
+            <h5 class="card-title">Ukrainian Dill Potatoes</h5>
+            <p class="card-text">
+            </p>            
+          </div>           
+        </div>  
+      </div>
+            
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-image-right" src="image/spaghettiVege.jpg" alt="Vegetarian Spaghetti">
+          <div class="card-body">
+            <h5 class="card-title">Vegetarian Spaghetti</h5>
+            <p class="card-text">
+            </p>
+          </div>           
+        </div>  
+      </div>
+   
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-image-right" src="image/chickenCurry.jpg" alt="Chicken Curry">
+          <div class="card-body">
+            <h5 class="card-title">Chicken Curry</h5>
+            <p class="card-text">
+            </p>
+          </div>           
+        </div>  
+      </div>
+      
+    </div><br>
+        </div>
+        
+      <hr color=#5C2F7A><br>
+
+
+      <!--Bake at home set-->
+      <a name="bakeAtHomeSet"></a>
+      <div class="packageInfo">
+        <div class="head">
+          <h2 class="bakeAtHomeSet">Bake at home set</h2>
+        </div> <br>
+
+        <div class="row">       
+          <img src="image/tools.png" class="myImg">        
+          <div><br><br>  
+            <p class="myText">You will get <b>5 bake at home sets</b> if you purchase deluxe package. 
+              In one bake at home set, there are all the kitchen tools and ingredients to make one delicious recipe.</p>
+          </div>
+        </div>     
+      </div>
+
+      <br> <hr color=#5C2F7A> <br>
+      
+      
+      <!--Nutritional information app-->
+      <a name="nutritionalIA"></a>
+      <div class="packageInfo">
+        <div class="head">
+          <h2 class="nutritionalIA">Nutritional Information App</h2>
+        </div> <br>
+  
+        <div class="row">
+            <img src="image/nutriApp.jpg" class="myImg">             
+          <div><br><br>  
+            <p class="myText">In deluxe package, there is an offer of <b>free nutritional information app</b>. 
+              In this nutritional information app, you can view nutritional facts of thousands of food items.
+              </p>
+          </div>
+        </div>  
+         
+      </div>
+
+    <br> <hr color=#5C2F7A> <br>
+            
+    <!--GiftBox-->
+    <a name="giftBox"></a>
+    <div class="packageInfo">
+      <div class="head">
+        <h2 class="giftBox">Special Occasion Gift Box</h2>
+      </div> <br>
+
+      <div class="row">
+          <img src="image/giftBox.png" class="myImg" />    
+          <div><br><br>  
+            <p class="myText">If you purchase deluxe package, you will also get <b>3 special occasion gift boxes</b>. 
+              You may choose three gift boxes among different special occasions.
+            </p>
+          </div>
+        </div>  
+      </div>
+
+  <br> <hr color=#5C2F7A> <br>
+  
+    </div>
+    <br>
+
+
+    <!--footer-->
+<footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="Faqs.html">FAQs</a></li>
+          </ul>
+        </div>
+      
+        <div class="col-sm-6">
+         
+          <ul class="social-icons">
+            <li><h6>Social Media</h6></li>
+            <li><a class="facebook" href="https://www.facebook.com/"><i class='fab fa-facebook-square'></i></a></li>
+          <li><a class="instagram" href="https://www.instagram.com/"><i class='fab fa-instagram'></i></a></li>
+          <li><a class="linkedin" href="https://www.linkedin.com/"><i class='fab fa-linkedin'></i></a></li>   
+          </ul>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <small>&copy; 2022 Copyright: InaBox,LLC</small>
+  </div>
+   <!-- Copyright -->
+
+    </div>
+  </footer>
+  
+  
+  </body>
+  </html>

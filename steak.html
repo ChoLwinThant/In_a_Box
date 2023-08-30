@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Asparagus Steak | In a Box</title>
+  <meta charset="utf-8">
+  <meta name="description" content="In a Box delivers food boxes and makes cooking fun and easy by providing a lot of products and services.">
+  <meta name="keywords" content="food, meal, recipe, delivery, cooking, dumpling">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="dumpling.css" /> 
+  <link rel="stylesheet" href="login.css" /> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <script src="login.js"></script>
+    
+</head>
+  
+</head>
+<body>
+  
+  <!--header-->
+  <div class="header">
+    <h2>In a Box</h2>
+  </div>
+
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-xl navbar-light mynav" style="background:#FBF1FB;">
+      <!-- Brand, logo -->
+      <a class="navbar-brand" href="index.html" style="font-family: cursive; color: #5C2F7A;">In a Box</a>
+     
+           
+      <!-- collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto mt-2 mt-sm-0">
+                
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" ><span class="mylink" >Home</span></a>
+          </li>
+         
+    
+         <!-- Dropdown -->
+
+         
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarServicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="mylink active">Services & products offered</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarServicesDropdown">
+            <a class="dropdown-item active" href="recipeGuide.html">Recipe guides</a>
+            <a class="dropdown-item" href="bakeAtHomeSet.html"> Bake at home set</a>
+            <a class="dropdown-item" href="ingredients.html">Ingredients</a>
+            <div class="dropdown-divider"></div>
+            <h5 class="dropdown-header">Other items</h5>
+            <a class="dropdown-item" href="OtherItems.html#mealPlanners">Meal planners</a>
+            <a class="dropdown-item" href="OtherItems.html#nutritionalIA">Nutritional information app</a>
+            <a class="dropdown-item" href="OtherItems.html#selection">Selection of weekly recipe choices</a>
+            <a class="dropdown-item" href="OtherItems.html#giftBox">Gift boxes for special occasions</a>
+          </div>
+        </li>
+        
+        
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              <span class="mylink">Packages</span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="beginner.html">Beginners</a>
+              <a class="dropdown-item" href="everyday.html">Everyday</a>
+              <a class="dropdown-item" href="deluxe.html">Deluxe</a>
+              <a class="dropdown-item" href="custom.html">Custom</a>
+            </div>
+          </li>       
+
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html" ><span class="mylink">About us</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.html" ><span class="mylink">Contact us</span></a>
+          </li>
+        </ul>
+
+        <div><a href="signUp.html" class="btn btn-outline-dark btn-sm" role="button" style="background-color: #F5E4FB;">Sign up</a></div>
+
+        <!--login-->
+        <div class="navbar myLogin" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa fa-fw fa-user"></i> Login</div>
+        <div id="id01" class="modal myModal1" style="z-index: 20;">
+  
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+        
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="email"><b>E-mail</b></label>
+              <input type="email" placeholder="Enter email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit" class="modalBtn">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        <!--login-->
+
+        <!--search box-->      
+        <form class="form-inline" action="/action_page.php">
+          <input type="search" class="form-control mr-sm-2" placeholder="Search">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        
+               
+      </div>
+    </nav> <br>
+
+   
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6">
+      <img src="image/AsparagusSteak.jpg" class="rounded" class="card-image-right" style="width: 100%;"/>
+    </div>      
+    
+    <div class="col-md-6">
+      <h1 style="color: #5C2F7A;">Asparagus Steak</h1> <br>
+      <p  id="intro">This recipe is chinese dumpling with pork filling.</p>
+      <p><b>Contains</b>: Eggs and flour in dumpling wrapper, soy, meat. </p>
+      <p><b>Allergens</b>: Soy</p>
+      <p><b>Tools</b>: Mixing bowls, frying pan with lid</p>
+    </div>
+  </div> <br>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="ingredients">
+        <h3>Ingredients in your box</h3>
+        <ul>
+          <li>dumpling wrappers</li>
+          <li>ground pork (½ lb/ 225 g)</li>
+          <li>red cabbage (2 cups/ 200 g)</li>
+          <li>green onion (2 cups/ 300 g), sliced</li>
+          <li>6 cloves garlic, minced</li>
+          <li>ginger, minced (4 tbsp)</li>
+          <li>soy sauce (2 tbsp)</li>           
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h3>Ingredients you will need</h3>
+      <ul>
+        <li>salt (1 tsp)</li>
+        <li>peeper (½ tsp)</li>
+        <li>sesame oil (2 tbsp)</li>
+        <li>warm water (1¼ cups or 300 ml)</li>
+      </ul>
+    </div>           
+  </div> <br><br>
+
+  <div class="instructions">
+    <h3>Step-by-step instructions</h3> <br>
+
+    <h4>1) Prepare for fillings</h4>
+    <p>Combine the cabbage, green onions, garlic, ginger, soy sauce, and sesame oil in a
+      medium bowl and mix until well-incorporated.</p> <br>
+
+    <h4>2) Mix with pork</h4>
+    <p>Combine the ground pork with a teaspoon of salt, 
+      the pepper and the cabbage mixture and stir until well-incorporated.</p> <br>
+
+    <h4>3) Wrap the dumplings</h4>
+    <p>To assemble the dumplings, add roughly 1 heaping tablespoon of filling to the center 
+      of a dumpling wrapper. With your finger, lightly coat half of the outside of the wrapper 
+      with water. Fold the moistened half of the wrapper over the filling and, using your 
+      fingers, pleat the edges to seal. Repeat with the remaining fillings and wrappers.</p> <br>
+
+    <h4>4) Cook the dumplings</h4>
+    <p>Heat the oil over medium high in a large skillet and add a few dumplings, cooking them 
+      in batches. Once the bottoms of the dumplings start to brown, add a splash of water 
+      and cover with a lid. Steam for about 5 minutes, or until the dumplings are cooked and
+       the water has evaporated. Transfer the cooked dumplings to a paper towel-lined 
+      plate to remove any excess moisture or grease.</p> <br>
+
+    <h4>5) Making soy sause</h4>
+    <p>In a small bowl, combine the soy sauce, rice vinegar, sesame oil, and pepper flakes and 
+      stir to combine. Serve the dumplings immediately with the dipping sauce.</p> <br>
+
+  </div><br>
+</div>
+
+<!--footer-->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+          <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+          <li><a href="Faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+    
+      <div class="col-sm-6">
+       
+        <ul class="social-icons">
+          <li><h6>Social Media</h6></li>
+          <li><a class="facebook" href="https://www.facebook.com/"><i class='fab fa-facebook-square'></i></a></li>
+          <li><a class="instagram" href="https://www.instagram.com/"><i class='fab fa-instagram'></i></a></li>
+          <li><a class="linkedin" href="https://www.linkedin.com/"><i class='fab fa-linkedin'></i></a></li>    
+        </ul>
+      </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <small>&copy; 2022 Copyright: InaBox,LLC</small>
+  </div>
+   <!-- Copyright -->
+   
+  </div>
+</footer>
+
+
+</body>
+</html>
